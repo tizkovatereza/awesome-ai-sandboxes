@@ -259,6 +259,21 @@ Lightspeed AI-native sandboxes. Stateful compute for durable agentic loops and i
 
 ---
 
+### [Zerops](https://zerops.io)
+[Website](https://zerops.io) | [Docs](https://docs.zerops.io) | [GitHub](https://github.com/zeropsio) | [ZCP](https://zerops.io/zcp)
+
+Developer-first cloud platform with ZCP for coding agents. Agents work inside real Zerops projects with managed services, private networking, deploys, logs, and verification exposed through MCP.
+
+- **Isolation:** Linux system containers on project-private networks
+- **Key features:** ZCP MCP, BYO agent/subscription, local + VPN development, Cloud IDE, native IDE over SSH, managed services by hostname, CI/CD pipeline, dev/stage projects separated from production
+- **Stateful:** Yes, persistent projects and managed services with environment parity across dev, stage, and production
+- **GPU:** Not specified
+- **BYOC / Self-host:** Not specified
+- **SDKs:** ZCP MCP, zCLI, MCP-capable clients including Claude Code, Codex, Gemini CLI, and opencode
+- **Pricing:** Free Lightweight project core, $10/month Serious project core, minute-based compute/resource pricing
+
+---
+
 ### [Sprites](https://sprites.dev) (by Fly.io)
 [Website](https://sprites.dev) | [Docs](https://docs.sprites.dev) | [API](https://sprites.dev/api)
 
