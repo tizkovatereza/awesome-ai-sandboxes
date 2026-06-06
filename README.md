@@ -168,6 +168,24 @@ Open-source browser API for AI agents and apps. Sandboxed Chrome sessions with a
 
 ---
 
+### [AgentBox](https://agent-box.sh)
+[Website](https://agent-box.sh) | [Docs](https://agent-box.sh/docs) | [GitHub](https://github.com/madarco/agentbox)
+
+Self-hostable CLI that runs coding agents in parallel, each in its own sandboxed box — local Docker or cloud VMs (Hetzner, Daytona, Vercel, E2B).
+
+- **Isolation:** Docker container with FUSE overlay (local); cloud VMs via Hetzner, Daytona, Vercel, and E2B
+- **Key features:** Run multiple agents in parallel, teleport a project into a box, per-box browser (noVNC) and VS Code/Cursor, persistent shells, private preview URLs (portless), git credentials kept on the host, works with Claude Code, Codex, and OpenCode
+- **Cold start:** Sub-1s for new boxes started from a checkpoint
+- **Snapshots / Forking:** Yes (checkpoints — start new boxes from a warmed checkpoint)
+- **Stateful:** Yes (with volumes), upper overlay volume persists across stop/start (node_modules included); auto-pause when idle
+- **GPU:** Not specified
+- **BYOC / Self-host:** Yes (runs on your PC, self-hosted, or your own Hetzner/Daytona/Vercel/E2B account)
+- **SDKs:** CLI (Node.js, `@madarco/agentbox`)
+- **License:** MIT
+- **Pricing:** Free and open-source (self-hosted; you pay only your chosen cloud/compute provider)
+
+---
+
 ## Closed Source
 
 ### [Blaxel](https://blaxel.ai)
