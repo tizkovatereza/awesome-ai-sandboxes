@@ -168,6 +168,23 @@ Open-source browser API for AI agents and apps. Sandboxed Chrome sessions with a
 
 ---
 
+### [mitos](https://mitos.run)
+[Website](https://mitos.run) | [GitHub](https://github.com/mitos-run/mitos)
+
+Self-hostable snapshot-fork sandboxes for AI agents. Boots Firecracker microVMs and forks them via copy-on-write memory snapshots into parallel attempts. Runs on Kubernetes or standalone.
+
+- **Isolation:** Firecracker microVMs
+- **Key features:** copy-on-write memory-snapshot forking, parallel attempt forks, Kubernetes CRDs (SandboxTemplate, SandboxPool, SandboxClaim, SandboxFork), standalone REST sandbox-server, exec and file APIs, pooled warm sandboxes
+- **Snapshots / Forking:** Yes (snapshot + fork)
+- **Stateful:** Yes
+- **GPU:** Not specified
+- **BYOC / Self-host:** Yes (self-hosted)
+- **SDKs:** Python (`mitos`)
+- **License:** Apache 2.0
+- **Pricing:** Free, open source
+
+---
+
 ## Closed Source
 
 ### [Blaxel](https://blaxel.ai)
