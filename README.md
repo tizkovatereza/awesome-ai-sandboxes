@@ -487,6 +487,24 @@ Firecracker microVM sandboxes with a 6-stage security pipeline — PII redaction
 
 ---
 
+### [CreateOS Sandbox](https://createos.sh/app/sandbox) (by NodeOps)
+[Website](https://createos.sh) | [Docs](https://nodeops.network/createos/docs/Sandbox/Overview) | [Pricing](https://createos.sh/pricing) | [GitHub](https://github.com/NodeOps-app/createos-sandbox-sdk)
+
+Firecracker microVM sandboxes for AI agents and untrusted code. Pause, resume, and fork full Linux boxes with private networks and S3 disks.
+
+- **Isolation:** Firecracker microVMs, each with its own kernel, root filesystem, and network identity
+- **Key features:** ~30ms p90 boot, pause/resume/fork from snapshots, private p2p-encrypted networks with WireGuard VPN access, egress allowlists, per-sandbox HTTPS ingress, SSH gateway and port forwarding, live two-way directory sync, S3-compatible disks attached and detached live, custom rootfs templates built from Dockerfiles, shapes up to 8 vCPU / 16GB
+- **Cold start:** ~30ms boot (p90); resume typically under a second
+- **Max session:** No fixed limit; optional idle auto-pause (60s–24h)
+- **Snapshots / Forking:** Yes (snapshot + fork)
+- **Stateful:** Yes, pause/resume snapshots (memory + disk), plus S3 disks
+- **GPU:** No
+- **BYOC / Self-host:** Yes (Enterprise), your machines onboarded as data plane nodes
+- **SDKs:** TypeScript (`@nodeops-createos/sandbox`), CLI (`createos`), REST API
+- **Pricing:** Free plan with 500 credits/month; paid plans from $5/month; usage metered per second in credits
+
+---
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the entry template and source policy.
