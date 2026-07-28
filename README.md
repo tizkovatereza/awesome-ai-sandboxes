@@ -275,8 +275,8 @@ Full Linux VMs for AI agents with built-in Git, live forking, and pause/resume. 
 - **Key features:** <600ms VM provisioning, live forking (clone running VM in milliseconds), pause & resume, built-in multi-tenant Git with branching/diffs/webhooks, custom domains, VPCs, SSH access, high IO, largest VMs/most memory + disk available in public tiers
 - **Stateful:** Yes, persistent VMs with suspend/resume, snapshots
 - **Long-running:** Unlimited (configurable idle timeout, can be set to null for indefinite)
-- **GPU:** No
-- **BYOC / Self-host:** No
+- **GPU:** Not specified
+- **BYOC / Self-host:** Not specified
 - **SDKs:** TypeScript (`freestyle`)
 - **Pricing:** Free tier (10 concurrent VMs), Hobby $50/month, Pro $500/month
 - **Providing sandboxes for:** Onlook, Wordware, HeroUI, Rork, Vibeflow
@@ -498,8 +498,8 @@ Cloud infrastructure for AI agents with stateful Firecracker microVM sandboxes, 
 - **Max session:** Unlimited (persistent sandboxes stay running)
 - **Snapshots / Forking:** Yes (snapshot + fork)
 - **Stateful:** Yes
-- **GPU:** Not specified
-- **BYOC / Self-host:** Not specified
+- **GPU:** No
+- **BYOC / Self-host:** No
 - **SDKs:** TypeScript (`@run-cloud/sdk`), Python (`runcloud-sdk`), Go (`github.com/newly-app/run-cloud-go`), CLI (`runcloud`), HTTP API
 - **Pricing:** Per-second usage at $0.00000492/physical-core-second and $0.00000083175/GiB-second; paused sandboxes have no compute charge
 
