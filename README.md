@@ -275,8 +275,8 @@ Full Linux VMs for AI agents with built-in Git, live forking, and pause/resume. 
 - **Key features:** <600ms VM provisioning, live forking (clone running VM in milliseconds), pause & resume, built-in multi-tenant Git with branching/diffs/webhooks, custom domains, VPCs, SSH access, high IO, largest VMs/most memory + disk available in public tiers
 - **Stateful:** Yes, persistent VMs with suspend/resume, snapshots
 - **Long-running:** Unlimited (configurable idle timeout, can be set to null for indefinite)
-- **GPU:** Not specified
-- **BYOC / Self-host:** Not specified
+- **GPU:** No
+- **BYOC / Self-host:** No
 - **SDKs:** TypeScript (`freestyle`)
 - **Pricing:** Free tier (10 concurrent VMs), Hobby $50/month, Pro $500/month
 - **Providing sandboxes for:** Onlook, Wordware, HeroUI, Rork, Vibeflow
