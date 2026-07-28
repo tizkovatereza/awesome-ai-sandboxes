@@ -501,7 +501,7 @@ Cloud infrastructure for AI agents with stateful Firecracker microVM sandboxes, 
 - **GPU:** No
 - **BYOC / Self-host:** No
 - **SDKs:** TypeScript (`@run-cloud/sdk`), Python (`runcloud-sdk`), Go (`github.com/newly-app/run-cloud-go`), CLI (`runcloud`), HTTP API
-- **Pricing:** Per-second usage at $0.00000492/physical-core-second and $0.00000083175/GiB-second; paused sandboxes have no compute charge
+- **Pricing:** ~$0.0297 per active hour for 2 vCPU / 4 GiB; metered per second, with no compute charge while paused
 
 ---
 
