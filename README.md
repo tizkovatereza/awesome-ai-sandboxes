@@ -493,7 +493,7 @@ Firecracker microVM sandboxes with a 6-stage security pipeline — PII redaction
 Cloud infrastructure for AI agents with stateful Firecracker microVM sandboxes, browser desktops, mobile simulators, and Xcode builds behind one API.
 
 - **Isolation:** KVM-backed Firecracker microVMs with a dedicated kernel and filesystem
-- **Key features:** Snapshot/fork/restore, pause/resume, persistent workspaces with SSH and HTTPS, browser desktops with computer control, custom OCI images, provider compatibility adapters, iOS and Android simulators
+- **Key features:** Up to 32 vCPU / 112 GiB RAM, 100 concurrent sandboxes per organization by default, CPU autoscaling, any Docker/OCI image, persistent HTTPS/SSH workspaces, browser desktops with computer control, provider compatibility adapters, iOS and Android simulators
 - **Cold start:** Under 1s fresh; <200ms from a warm snapshot
 - **Max session:** Unlimited (persistent sandboxes stay running)
 - **Snapshots / Forking:** Yes (snapshot + fork)
