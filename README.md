@@ -487,6 +487,24 @@ Firecracker microVM sandboxes with a 6-stage security pipeline — PII redaction
 
 ---
 
+### [Run Cloud](https://run.cloud)
+[Website](https://run.cloud) | [Docs](https://docs.run.cloud) | [GitHub](https://github.com/newly-app/run-cloud-go)
+
+Cloud infrastructure for AI agents with stateful Firecracker microVM sandboxes, browser desktops, mobile simulators, and Xcode builds behind one API.
+
+- **Isolation:** KVM-backed Firecracker microVMs with a dedicated kernel and filesystem
+- **Key features:** Up to 32 vCPU / 112 GiB RAM, 100 concurrent sandboxes per organization by default, CPU autoscaling, any Docker/OCI image, persistent HTTPS/SSH workspaces, browser desktops with computer control, provider compatibility adapters, iOS and Android simulators
+- **Cold start:** Under 1s fresh; <200ms from a warm snapshot
+- **Max session:** Unlimited (persistent sandboxes stay running)
+- **Snapshots / Forking:** Yes (snapshot + fork)
+- **Stateful:** Yes
+- **GPU:** No
+- **BYOC / Self-host:** No
+- **SDKs:** TypeScript (`@run-cloud/sdk`), Python (`runcloud-sdk`), Go (`github.com/newly-app/run-cloud-go`), CLI (`runcloud`), HTTP API
+- **Pricing:** ~$0.0297 per active hour for 2 vCPU / 4 GiB; metered per second, with no compute charge while paused
+
+---
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the entry template and source policy.
