@@ -487,6 +487,25 @@ Firecracker microVM sandboxes with a 6-stage security pipeline — PII redaction
 
 ---
 
+### [Tenki Sandbox](https://tenki.cloud/products/sandbox)
+[Website](https://tenki.cloud/products/sandbox) | [Docs](https://tenki.cloud/docs/sandbox/quickstart) | [GitHub](https://github.com/TenkiCloud)
+
+Disposable, hardware-isolated Linux VMs for AI coding agents, with warm-start sessions, snapshot and fork, and SDKs for TypeScript, Python, and Go.
+
+- **Isolation:** Hardware-isolated VM, dedicated kernel boundary per session
+- **Key features:** Sub-2s session start, persistent volumes, disk and memory snapshots with fork, port exposure with live preview URLs, SSH access, Sandbox ADE desktop app (macOS/Linux), bring-your-own-agent support (Claude Code, Codex)
+- **Cold start:** <2s (per official docs, "under 2s")
+- **Max session:** Configurable via a max-duration option; no fixed cap specified in the docs
+- **Snapshots / Forking:** Yes (snapshot + fork)
+- **Stateful:** Yes (with volumes)
+- **GPU:** Not specified
+- **BYOC / Self-host:** Not specified
+- **SDKs:** TypeScript (`@tenkicloud/sandbox`), Python (`tenki`), Go (`github.com/LuxorLabs/tenki-sdk-go/sandbox`)
+- **License:** Proprietary
+- **Pricing:** Starter plan is free with $10 monthly credits; usage beyond credits billed per second (first 5 GiB storage free); Team plan $200/mo with $100 monthly credits; Enterprise is custom-priced
+
+---
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the entry template and source policy.
