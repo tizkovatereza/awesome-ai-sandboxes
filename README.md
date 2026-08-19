@@ -184,6 +184,25 @@ Open-source CLI that runs multiple coding agents on one task, each in its own se
 
 ---
 
+### [SandBase Harness](https://github.com/sandbaseai/sandbase-harness)
+[GitHub](https://github.com/sandbaseai/sandbase-harness) | [Quickstart](https://github.com/sandbaseai/sandbase-harness#quickstart)
+
+Open-source, local-first agent runtime with per-session Docker sandboxes, Kubernetes execution, credential controls, audit trails, and replay.
+
+- **Isolation:** Per-session Docker containers, Kubernetes pods, or local processes
+- **Key features:** Session lifecycle, tool governance, credential vaults, workspace snapshots, audit trails, resumable event replay, MCP stdio bridge
+- **Cold start:** Not specified
+- **Max session:** Not specified
+- **Snapshots / Forking:** Yes (snapshot only)
+- **Stateful:** Yes
+- **GPU:** Not specified
+- **BYOC / Self-host:** Yes
+- **SDKs:** TypeScript (`managed-agents`)
+- **License:** Apache 2.0
+- **Pricing:** Free (open source)
+
+---
+
 ## Closed Source
 
 ### [Baponi](https://baponi.ai)
