@@ -184,6 +184,20 @@ Open-source CLI that runs multiple coding agents on one task, each in its own se
 
 ---
 
+### [bashkit4j](https://github.com/tersePrompts/bashkit4j)
+[GitHub](https://github.com/tersePrompts/bashkit4j) | [Maven Central](https://central.sonatype.com/artifact/io.github.terseprompts/bashkit4j) | [Javadoc](https://javadoc.io/doc/io.github.terseprompts/bashkit4j)
+
+In-JVM bash sandbox for AI agents: a POSIX-style bash with 160+ commands re-implemented in Rust, running against an in-memory virtual filesystem.
+
+- **Isolation:** In-process interpreter — untrusted scripts spawn no OS processes and issue no syscalls
+- **Key features:** In-memory VFS, opt-in allowlisted host mounts, per-exec wall-clock timeout, cancellation, resource limits, native engine bundled for 5 platforms
+- **Stateful:** Yes — shell state, files, and env persist across exec calls within an instance
+- **GPU:** No
+- **Self-host:** Runs as a library inside your JVM process — no infrastructure
+- **SDKs:** Java 17+ (JNA)
+- **License:** MIT
+- **Pricing:** Free and open source
+
 ## Closed Source
 
 ### [Baponi](https://baponi.ai)
