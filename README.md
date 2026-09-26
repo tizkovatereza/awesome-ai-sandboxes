@@ -539,6 +539,22 @@ Disposable, hardware-isolated Linux VMs for AI coding agents, with warm-start se
 
 ---
 
+### [CreateOS Sandbox](https://createos.sh/products/sandbox)
+[Website](https://createos.sh/products/sandbox) | [Docs](https://docs.createos.sh/Sandbox/Overview) | [GitHub](https://github.com/NodeOps-app/createos-sandbox-sdk)
+
+Firecracker microVM sandboxes for agents and untrusted code, with pause, resume and fork of full VM state, private sandbox-to-sandbox networks, and in-kernel egress allowlists.
+
+- **Isolation:** Firecracker microVMs, own kernel per sandbox
+- **Key features:** Pause/resume/fork of full VM state, private overlay networks between sandboxes, egress allowlist enforced in-kernel outside the VM, no ingress by default, custom images from a Dockerfile (templates), S3-compatible disk mounts and bring-your-own storage, per-sandbox HTTPS ingress, SSH gateway, MCP server so agents provision their own sandboxes, EU and US regions
+- **Cold start:** ~210 ms median time-to-interactive (create plus first command), per the REST API reference
+- **Max session:** Unlimited (no lifetime cap; optional idle auto-pause of 60 s to 24 h)
+- **Snapshots / Forking:** Yes (snapshot + fork)
+- **Stateful:** Yes (with volumes)
+- **GPU:** No
+- **BYOC / Self-host:** Yes (self-host the control plane and storage)
+- **SDKs:** TypeScript (`@nodeops-createos/sandbox`, MIT), CLI (`createos`), MCP, REST API
+- **License:** Proprietary (SDK and CLI MIT)
+- **Pricing:** 500 free credits on signup; pay-as-you-go billed per second at $0.0504/vCPU-hr and $0.0162/GiB-hr, no egress fees, no charge while paused
 ### [Runtime](https://withruntime.com)
 [Website](https://withruntime.com) | [Docs](https://withruntime.com/docs) | [GitHub](https://github.com/withruntime/runtime)
 
