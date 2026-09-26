@@ -184,6 +184,39 @@ Open-source CLI that runs multiple coding agents on one task, each in its own se
 
 ---
 
+### [bashkit4j](https://github.com/tersePrompts/bashkit4j)
+[GitHub](https://github.com/tersePrompts/bashkit4j) | [Maven Central](https://central.sonatype.com/artifact/io.github.terseprompts/bashkit4j) | [Javadoc](https://javadoc.io/doc/io.github.terseprompts/bashkit4j)
+
+In-JVM bash sandbox for AI agents: a POSIX-style bash with 160+ commands re-implemented in Rust, running against an in-memory virtual filesystem.
+
+- **Isolation:** In-process interpreter — untrusted scripts spawn no OS processes and issue no syscalls
+- **Key features:** In-memory VFS, opt-in allowlisted host mounts, per-exec wall-clock timeout, cancellation, resource limits, native engine bundled for 5 platforms
+- **Stateful:** Yes — shell state, files, and env persist across exec calls within an instance
+- **GPU:** No
+- **Self-host:** Runs as a library inside your JVM process — no infrastructure
+- **SDKs:** Java 17+ (JNA)
+- **License:** MIT
+- **Pricing:** Free and open source
+
+---
+
+### [Minimal](https://minimal.dev)
+[Website](https://minimal.dev) | [Docs](https://docs.minimal.dev) | [GitHub](https://github.com/gominimal/minimal)
+
+Open-source CLI for sandboxed dev environments and AI coding agents. Sessions run in libkrun microVMs on macOS and namespace isolation on Linux.
+
+- **Isolation:** libkrun microVM on Apple's Hypervisor.framework (macOS, Apple Silicon); unprivileged user namespaces, kernel 5.10+ (Linux, x86_64/aarch64)
+- **Key features:** Declarative `minimal.toml` environments, durable sessions tied to git worktree context, agent shell where agents "cannot install arbitrary software, read unrelated files, or modify your system", loadouts for per-user tooling, cleanroom package builds with no host sharing, SLSA Build L3 provenance and CycloneDX v1.5 SBOMs, public package registry
+- **Cold start:** Not specified
+- **Max session:** Not specified — sessions keep running when detached and survive a provider restart until destroyed
+- **Snapshots / Forking:** Not specified
+- **Stateful:** Yes — session records and workspaces persist across detach/attach
+- **GPU:** Not specified
+- **BYOC / Self-host:** Yes (local-first, runs on your own machine)
+- **SDKs:** CLI-first (`min`, `minimal`), plus an MCP server and a GitHub Action (`gominimal/run-task`) for integrations
+- **License:** Apache 2.0
+- **Pricing:** Free and open source (v0.5.4 public beta); "Minimal for Teams" listed as coming soon
+
 ## Closed Source
 
 ### [Baponi](https://baponi.ai)
@@ -502,6 +535,39 @@ Cloud infrastructure for AI agents with stateful Firecracker microVM sandboxes, 
 - **BYOC / Self-host:** No
 - **SDKs:** TypeScript (`@run-cloud/sdk`), Python (`runcloud-sdk`), Go (`github.com/newly-app/run-cloud-go`), CLI (`runcloud`), HTTP API
 - **Pricing:** ~$0.0297 per active hour for 2 vCPU / 4 GiB; metered per second, with no compute charge while paused
+### [Tenki Sandbox](https://tenki.cloud/products/sandbox)
+[Website](https://tenki.cloud/products/sandbox) | [Docs](https://tenki.cloud/docs/sandbox/quickstart) | [GitHub](https://github.com/TenkiCloud)
+
+Disposable, hardware-isolated Linux VMs for AI coding agents, with warm-start sessions, snapshot and fork, and SDKs for TypeScript, Python, and Go.
+
+- **Isolation:** Hardware-isolated VM, dedicated kernel boundary per session
+- **Key features:** Sub-2s session start, persistent volumes, disk and memory snapshots with fork, port exposure with live preview URLs, SSH access, Sandbox ADE desktop app (macOS/Linux), bring-your-own-agent support (Claude Code, Codex)
+- **Cold start:** <2s (per official docs, "under 2s")
+- **Max session:** Configurable via a max-duration option; no fixed cap specified in the docs
+- **Snapshots / Forking:** Yes (snapshot + fork)
+- **Stateful:** Yes (with volumes)
+- **GPU:** Not specified
+- **BYOC / Self-host:** Not specified
+- **SDKs:** TypeScript (`@tenkicloud/sandbox`), Python (`tenki`), Go (`github.com/LuxorLabs/tenki-sdk-go/sandbox`)
+- **License:** Proprietary
+- **Pricing:** Starter plan is free with $10 monthly credits; usage beyond credits billed per second (first 5 GiB storage free); Team plan $200/mo with $100 monthly credits; Enterprise is custom-priced
+
+---
+
+### [Runtime](https://withruntime.com)
+[Website](https://withruntime.com) | [Docs](https://withruntime.com/docs) | [GitHub](https://github.com/withruntime/runtime)
+
+Linux sandboxes for AI agents, each a Firecracker microVM with its own kernel, created from an SDK call, a CLI or an MCP server.
+
+- **Isolation:** Firecracker microVM
+- **Key features:** Pause and wake keeping memory and processes, snapshots and forks, egress proxy with allow and deny lists, secrets injected per host, private preview URLs, volumes with daily backups, MCP server, E2B SDK compatibility
+- **Cold start:** 243 ms median to running
+- **Max session:** Unlimited (lease extended, or `persistent: true`)
+- **Snapshots / Forking:** Yes (snapshot + fork)
+- **Stateful:** Yes (with volumes)
+- **GPU:** No
+- **BYOC / Self-host:** No
+- **SDKs:** TypeScript (`withruntime`), Python (`withruntime`), Go, Java, Ruby
 
 ---
 
