@@ -556,6 +556,24 @@ Linux sandboxes for AI agents, each a Firecracker microVM with its own kernel, c
 
 ---
 
+### [BoxCompute](https://boxcompute.ai)
+[Website](https://boxcompute.ai) | [Docs](https://boxcompute.ai/docs/) | [GitHub](https://github.com/boxcompute/sdk)
+
+Linux VM sandboxes for AI agents on KubeVirt, hosted in Cyberjaya, Malaysia, with an HTTP API, CLI, SDKs and a hosted web agent.
+
+- **Isolation:** Full Linux VM with its own kernel (KubeVirt)
+- **Key features:** Root access, outbound internet by default or no network interface (`blockNetwork`), Small (0.5 vCPU / 1,024 MiB) and Large (1.5 vCPU / 3,072 MiB) sizes, 30 GiB thin-provisioned workspace, stop and resume on the same disk, observable operations with retained output and cancellation, browser preview URLs
+- **Cold start:** Not specified
+- **Max session:** Unlimited (no automatic lifetime expiry)
+- **Snapshots / Forking:** No
+- **Stateful:** Yes
+- **GPU:** Not specified
+- **BYOC / Self-host:** Yes (Enterprise)
+- **SDKs:** TypeScript (`@boxcompute/sdk`), Python (`boxcompute`); CLI (`@boxcompute/cli`)
+- **Pricing:** Billed per second while a VM runs: about $0.05/hour (Small) and $0.15/hour (Large); stopped VMs cost nothing. $10 one-time welcome credit; Starter plan $15.99/month with $40 monthly credit
+
+---
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the entry template and source policy.
