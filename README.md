@@ -217,6 +217,25 @@ Open-source CLI for sandboxed dev environments and AI coding agents. Sessions ru
 - **License:** Apache 2.0
 - **Pricing:** Free and open source (v0.5.4 public beta); "Minimal for Teams" listed as coming soon
 
+### [Quilzo](https://github.com/quilzo/quilzo)
+[Website](https://quilzo.github.io) | [Docs](https://quilzo.github.io/programs/) | [GitHub](https://github.com/quilzo/quilzo)
+
+Self-hosted control plane that runs an agent's own program confined, reaching only a model, Quilzo and its declared hosts.
+
+- **Isolation:** Linux user, PID, network and mount namespaces, Landlock, seccomp, dropped capabilities and rlimits; NVIDIA OpenShell as a second backend
+- **Key features:** Per-agent declaration enforced at one gate, Egress only to declared hosts, Human approval before chosen actions, Budgets in steps, tokens and money, Signed and provable run receipts, Single static Go binary
+- **Cold start:** Not specified
+- **Max session:** Set per agent (declared duration budget)
+- **Snapshots / Forking:** Not specified
+- **Stateful:** Not specified
+- **GPU:** Not specified
+- **BYOC / Self-host:** Yes
+- **SDKs:** CLI, MCP and HTTP (any language)
+- **License:** Apache 2.0
+- **Pricing:** Free (self-hosted, open source)
+
+---
+
 ## Closed Source
 
 ### [Baponi](https://baponi.ai)
