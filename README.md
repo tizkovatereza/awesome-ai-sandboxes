@@ -556,6 +556,25 @@ Linux sandboxes for AI agents, each a Firecracker microVM with its own kernel, c
 
 ---
 
+### [EQVPS](https://eqvps.com/en/sandboxes)
+[Website](https://eqvps.com/en/sandboxes) | [Docs](https://eqvps.com/en/docs/sandboxes) | [GitHub](https://github.com/Poiuyhje/eqvps-mcp)
+
+Firecracker microVM sandboxes for AI agents via REST API, Python/TypeScript SDKs or a remote MCP server. Billed per second from a prepaid crypto balance.
+
+- **Isolation:** Firecracker microVM with its own kernel, disk and CPU/RAM limits; outbound internet only, no inbound ports or SSH
+- **Key features:** Remote MCP server (an agent can sign up and run sandboxes without a human), ephemeral or persistent mode, Python 3.12 / Node.js 22 / bash with root and apt, background tasks for long commands, file transfer up to 2 GB via one-time links, env vars, daily and monthly spending limits, email-only signup with crypto payment (BTC, XMR, USDC, USDT)
+- **Cold start:** ~1s (per official docs, "starts in about a second")
+- **Max session:** 24h for ephemeral (idle timeout up to 1h); 30 days for persistent
+- **Snapshots / Forking:** No (persistent sandboxes are paused to a snapshot only when the balance runs out)
+- **Stateful:** Yes (persistent mode keeps disk and state for up to 30 days)
+- **GPU:** No
+- **BYOC / Self-host:** No
+- **SDKs:** Python (`eqvps`), TypeScript (`@eqvps/sdk`), REST API, MCP
+- **License:** Proprietary
+- **Pricing:** $1 free credit for new accounts after email confirmation; $0.040 per vCPU-hour + $0.013 per GiB-hour, billed per second (60 s minimum); smallest tariff (0.25 vCPU, 512 MB) is $0.0165/hour
+
+---
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the entry template and source policy.
