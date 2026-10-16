@@ -556,6 +556,25 @@ Linux sandboxes for AI agents, each a Firecracker microVM with its own kernel, c
 
 ---
 
+### [NoMac](https://nomac.app)
+[Website](https://nomac.app) | [Docs](https://nomac.app/install) | [GitHub](https://github.com/gergomiklos/nomac-plugin)
+
+macOS sandboxes for AI agents: a full macOS VM on Apple silicon with Xcode and the iOS Simulator, deleted when the session stops.
+
+- **Isolation:** Full macOS VM per session on Apple silicon; nothing outside the session can reach it, and it is deleted at stop
+- **Key features:** Xcode and iOS Simulator preinstalled, administrator access with passwordless sudo, SSH and HTTPS command API, remote MCP server with OAuth, screenshots with keyboard and mouse input, desktop in the browser, code signing and TestFlight upload
+- **Cold start:** About a minute (per official site, "ready in a minute")
+- **Max session:** 8h (2h by default, extendable)
+- **Snapshots / Forking:** No
+- **Stateful:** Yes (with volumes)
+- **GPU:** Not specified
+- **BYOC / Self-host:** No
+- **SDKs:** No SDK; CLI and local MCP server (`@nomac/cli`), HTTPS API, hosted MCP server
+- **License:** Proprietary
+- **Pricing:** No free tier; prepaid credit at $0.80 per hour, billed by the minute with a one-minute minimum, sold in $10 packs; no subscription
+
+---
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the entry template and source policy.
