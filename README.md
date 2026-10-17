@@ -121,7 +121,7 @@ Production-grade sandbox runtime for AI agents.
 ---
 
 ### [Celesto](https://celesto.ai)
-[Website](https://celesto.ai) | [Docs](https://docs.celesto.ai) | [GitHub](https://github.com/CelestoAI/celesto)
+[Website](https://celesto.ai) | [Docs](https://celesto.ai/docs) | [GitHub](https://github.com/CelestoAI/celesto)
 
 Open source AI sandbox with flexible microVM backends - ships with QEMU and Firecracker.
 
