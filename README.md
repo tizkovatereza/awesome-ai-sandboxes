@@ -131,7 +131,7 @@ Open source AI sandbox with flexible microVM backends - ships with QEMU and Fire
 - **GPU:** Yes (powered by QEMU)
 - **BYOC / Self-host:** Yes, built to self-host
 - **SDKs:** Python SDK and CLI (`pip install smolvm`)
-- **Pricing:** Free (open source)
+- **Pricing:** Free (open source); hosted sandboxes from $0.015/running hour (Micro, 1 shared vCPU, 2 GB RAM), card-free $5 trial
 
 ---
 
