@@ -120,7 +120,7 @@ Production-grade sandbox runtime for AI agents.
 
 ---
 
-### [SmolVM](https://celesto.ai) (by Celesto AI)
+### [Celesto](https://celesto.ai)
 [Website](https://celesto.ai) | [Docs](https://docs.celesto.ai/smolvm) | [GitHub](https://github.com/CelestoAI/SmolVM)
 
 Open source AI sandbox with flexible microVM backends - ships with QEMU and Firecracker.
