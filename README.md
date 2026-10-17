@@ -121,7 +121,7 @@ Production-grade sandbox runtime for AI agents.
 ---
 
 ### [Celesto](https://celesto.ai)
-[Website](https://celesto.ai) | [Docs](https://docs.celesto.ai/smolvm) | [GitHub](https://github.com/CelestoAI/SmolVM)
+[Website](https://celesto.ai) | [Docs](https://docs.celesto.ai) | [GitHub](https://github.com/CelestoAI/celesto)
 
 Open source AI sandbox with flexible microVM backends - ships with QEMU and Firecracker.
 
@@ -130,7 +130,7 @@ Open source AI sandbox with flexible microVM backends - ships with QEMU and Fire
 - **Stateful:** Yes, stop and resume at any point in time
 - **GPU:** Yes (powered by QEMU)
 - **BYOC / Self-host:** Yes, built to self-host
-- **SDKs:** Python SDK and CLI (`pip install smolvm`)
+- **SDKs:** Python SDK and CLI (`pip install celesto`)
 - **Pricing:** Free (open source); hosted sandboxes from $0.015/running hour (Micro, 1 shared vCPU, 2 GB RAM), card-free $5 trial
 
 ---
