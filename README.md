@@ -556,6 +556,25 @@ Linux sandboxes for AI agents, each a Firecracker microVM with its own kernel, c
 
 ---
 
+### [epho](https://epho.io)
+[Website](https://epho.io) | [Docs](https://epho.io/docs) | [API](https://app.epho.io/api/openapi.json)
+
+Cloud sandboxes with Claude Code, Codex or OpenCode preinstalled. One HTTP endpoint clones your repos, runs the agent and streams its events over SSE.
+
+- **Isolation:** Not specified
+- **Key features:** Claude Code, Codex and OpenCode harnesses, up to 32 Git repos cloned per run, MCP servers (stdio or remote), secret env vars swapped in by an egress proxy only for listed domains, durable multi-turn chats on the same filesystem, SSE streaming plus async runs with webhooks, input files in and presigned artifacts out
+- **Cold start:** Not specified
+- **Max session:** Not specified
+- **Snapshots / Forking:** Not specified
+- **Stateful:** Yes
+- **GPU:** No
+- **BYOC / Self-host:** Not specified
+- **SDKs:** None (HTTP API with an OpenAPI 3.1 spec)
+- **License:** Proprietary
+- **Pricing:** Usage-based per second: $0.0000164 per vCPU-second, $0.0000053 per GiB-second of memory, $0.000000036 per GiB-second of disk; $10 credit on signup; model tokens billed by your own provider
+
+---
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the entry template and source policy.
