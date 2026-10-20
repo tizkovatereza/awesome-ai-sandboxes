@@ -217,6 +217,27 @@ Open-source CLI for sandboxed dev environments and AI coding agents. Sessions ru
 - **License:** Apache 2.0
 - **Pricing:** Free and open source (v0.5.4 public beta); "Minimal for Teams" listed as coming soon
 
+---
+
+### [Mudroom](https://kernel-hunter.github.io/mudroom/)
+[Website](https://kernel-hunter.github.io/mudroom/) | [GitHub](https://github.com/Kernel-Hunter/mudroom)
+
+Sandbox for coding agents: runs them in a Linux micro-VM or Docker/Podman container on a clone of the project, returning changes as a diff.
+
+- **Isolation:** Linux micro-VM per session via Apple's `container` (macOS 26+, Apple silicon); Docker or Podman container with `--cap-drop ALL` and `no-new-privileges` (any platform). The project folder is never mounted
+- **Key features:** Agents (Claude Code, Codex, Gemini CLI, opencode, Aider, or any command), clone of the whole folder including untracked and ignored files (copy-on-write on APFS, btrfs, XFS and ReFS), locked/open/offline network modes, allowlist proxy that logs every connection, apply per file or per hunk, one-step undo per apply, timed snapshots of the agent's work, review app on macOS (terminal review on Linux and Windows)
+- **Cold start:** Not specified
+- **Max session:** Not specified
+- **Snapshots / Forking:** Yes (snapshot only)
+- **Stateful:** Yes (session clones, snapshots and network log stay on disk until discarded)
+- **GPU:** Not specified
+- **BYOC / Self-host:** Yes (runs locally)
+- **SDKs:** None (CLI `mudroom` and macOS app)
+- **License:** MIT
+- **Pricing:** Free (open source)
+
+---
+
 ## Closed Source
 
 ### [Baponi](https://baponi.ai)
