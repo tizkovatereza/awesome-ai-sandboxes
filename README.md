@@ -217,6 +217,25 @@ Open-source CLI for sandboxed dev environments and AI coding agents. Sessions ru
 - **License:** Apache 2.0
 - **Pricing:** Free and open source (v0.5.4 public beta); "Minimal for Teams" listed as coming soon
 
+---
+
+### [vmforai](https://github.com/emincan2000/vmforai)
+[GitHub](https://github.com/emincan2000/vmforai)
+
+Open-source CLI and terminal UI that runs coding agents (Claude Code, Codex, Gemini CLI, OpenCode, aider) inside full virtual machines on your computer, over SSH.
+
+- **Isolation:** Full virtual machines (libvirt/QEMU/KVM), or any VM reachable over SSH (VirtualBox, VMware, Hyper-V, a cloud server)
+- **Key features:** Creates Debian, Ubuntu and Arch VMs from official cloud images, a snapshot before each session and one-command undo, background tasks, one task on several copy-on-write clones, a git repository sent in and the agent's work brought back as a branch, an optional host-enforced allow list for the VM's network, Linux and Windows guests
+- **Cold start:** 30 s to 2 min for a new VM once its image is downloaded; existing VMs start on connect
+- **Max session:** Not specified
+- **Snapshots / Forking:** Yes (snapshot + fork)
+- **Stateful:** Yes (persistent VMs)
+- **GPU:** Not specified
+- **BYOC / Self-host:** Yes (runs on your own Linux machine)
+- **SDKs:** CLI (Bash) and terminal UI; an MCP server mode (`vmforai mcp`)
+- **License:** MIT
+- **Pricing:** Free and open source
+
 ## Closed Source
 
 ### [Baponi](https://baponi.ai)
