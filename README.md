@@ -556,6 +556,25 @@ Linux sandboxes for AI agents, each a Firecracker microVM with its own kernel, c
 
 ---
 
+### [Clousd](https://clousd.com)
+[Website](https://clousd.com) | [Docs](https://clousd.com/docs/) | [GitHub](https://github.com/Clousd-Android/clousd-sdk)
+
+Cloud Android phones as computer-use sandboxes for AI agents, driven through an MCP server or a REST API.
+
+- **Isolation:** Not specified
+- **Key features:** 150+ Android device models on Android 12-17, Google Play on the device, screenshot with numbered UI elements, tap/swipe/type actions, plain-language tasks on up to 32 phones in one call, ADB access, live view in the browser
+- **Cold start:** Not specified
+- **Max session:** Not specified
+- **Snapshots / Forking:** No
+- **Stateful:** Yes
+- **GPU:** No
+- **BYOC / Self-host:** No
+- **SDKs:** Python (`clousd`), MCP server (`clousd-mcp`, hosted at `https://api.clousd.com/mcp`), REST API
+- **License:** Proprietary (SDK and MCP server MIT)
+- **Pricing:** Free 30-minute trial; plans from $25/month; pay as you go $0.004 per minute, capped at $0.80 per day per phone
+
+---
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the entry template and source policy.
