@@ -556,6 +556,25 @@ Linux sandboxes for AI agents, each a Firecracker microVM with its own kernel, c
 
 ---
 
+### [Agent37](https://www.agent37.com)
+[Website](https://www.agent37.com) | [Docs](https://www.agent37.com/docs) | [GitHub](https://github.com/agent37-platform)
+
+Persistent Linux sandboxes and full VMs for AI agents, with any port reachable over HTTPS and auto-sleep that bills disk alone while idle.
+
+- **Isolation:** gVisor (default instances), or a full VM with its own kernel (`"type": "vm"`)
+- **Key features:** Auto-sleep with wake on the next request, an HTTPS URL for every port plus public ports for webhooks, SSH, daily and on-demand backups with restore, fork, custom Docker images and cloud template builds, agent templates (Hermes, OpenClaw, Claude Code, Codex), regions in the US, EU and India
+- **Cold start:** Not specified
+- **Max session:** Unlimited (an instance runs until you stop or delete it)
+- **Snapshots / Forking:** Yes (snapshot + fork)
+- **Stateful:** Yes
+- **GPU:** No
+- **BYOC / Self-host:** No
+- **SDKs:** REST API, no SDK needed; CLI (`agent37` on npm)
+- **License:** Proprietary
+- **Pricing:** One-time $5 credit when you add a card; metered per minute, from $4.76/mo for 2 vCPU / 4 GB running around the clock; sleeping or stopped instances bill disk alone ($0.09/GB/mo)
+
+---
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the entry template and source policy.
