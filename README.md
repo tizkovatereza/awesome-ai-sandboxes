@@ -556,6 +556,25 @@ Linux sandboxes for AI agents, each a Firecracker microVM with its own kernel, c
 
 ---
 
+### [Prized Sandboxes](https://prized.dev/sandboxes?utm_source=awesome-ai-sandboxes)
+[Website](https://prized.dev/sandboxes?utm_source=awesome-ai-sandboxes) | [Docs](https://prized.dev/docs/sandboxes)
+
+Firecracker microVM sandboxes for AI agents, created through an HTTP API or the `prized sandbox` CLI.
+
+- **Isolation:** Firecracker microVM
+- **Key features:** Pause keeps memory and disk, fork a running sandbox into live copies, per-second billing, 1 to 32 vCPU and up to 128 GB memory, template with Claude Code and Codex, auto-pause and auto-delete timers, agents can sign up through the API
+- **Cold start:** Not specified
+- **Max session:** 7 days (24h default, extendable)
+- **Snapshots / Forking:** Yes (fork only)
+- **Stateful:** Yes
+- **GPU:** No
+- **BYOC / Self-host:** No
+- **SDKs:** None yet (HTTP API and `prized` CLI)
+- **License:** Proprietary
+- **Pricing:** $30 free credit, no card (10 sandboxes at once, each up to 2 vCPU, 4 GB, 60 min); then per second, no minimum: $0.04/vCPU-hour, $0.0125/GB-hour memory, $0.0001/GB-hour disk; paused sandboxes pay storage only, first 20 GB included
+
+---
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the entry template and source policy.
