@@ -556,6 +556,25 @@ Linux sandboxes for AI agents, each a Firecracker microVM with its own kernel, c
 
 ---
 
+### [VoltageGPU](https://voltagegpu.com/agent-quickstart)
+[Website](https://voltagegpu.com) | [Docs](https://voltagegpu.com/coding-agents.md) | [GitHub](https://github.com/VoltageGPU/VOLTAGEGPU-CLI)
+
+Intel TDX Confidential VMs with an NVIDIA GPU, and CPU sandboxes, that AI agents start with a deadline from the `vgpu` CLI or MCP.
+
+- **Isolation:** Intel TDX trust domain with NVIDIA GPU passthrough (Confidential VM); sandboxes have no enclave
+- **Key features:** Mandatory TTL on every launch, agent API keys limited to the machines they start with a daily budget, attestation verified on the agent's machine (`vgpu attest`), exec and scp over SSH, local and remote MCP servers, sandboxes that pause when idle
+- **Cold start:** Not specified
+- **Max session:** 720h (Confidential VM), 7 days (sandbox)
+- **Snapshots / Forking:** No
+- **Stateful:** Yes
+- **GPU:** Yes (H100, H200, RTX PRO 6000 Blackwell; stock varies)
+- **BYOC / Self-host:** No
+- **SDKs:** Python (`voltagegpu-cli`), CLI (`vgpu`), REST API, MCP
+- **License:** Proprietary (CLI and SDK: MIT)
+- **Pricing:** Per-second billing from a prepaid balance; one hour charged at launch, the unused part returned on release; Confidential VM with one GPU from $3.80/hour, sandbox from $0.09/hour running
+
+---
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the entry template and source policy.
