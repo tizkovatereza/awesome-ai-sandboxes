@@ -556,6 +556,22 @@ Linux sandboxes for AI agents, each a Firecracker microVM with its own kernel, c
 
 ---
 
+### [kosa8](https://kosa8.com)
+[Website](https://kosa8.com) | [Docs](https://kosa8.com/docs/) | [GitHub](https://github.com/kosa8ai/kosa8-claude-plugin)
+
+Secure infrastructure for AI agents: each agent gets its own microVM sandbox on the developer's or organisation's own machines.
+
+- **Isolation:** microVM per sandbox, with its own kernel
+- **Key features:** Checkpoint memory and processes in about 0.7 s, rewind in about 1 s, fork a running sandbox into live copies, allow-listed egress, host-side API key injection, human approvals, hash-chained audit log
+- **Stateful:** Yes, checkpoints and snapshots of the running machine
+- **Long-running:** No time limit (runs on your hardware)
+- **GPU:** No
+- **BYOC / Self-host:** Yes, local-first (macOS on Apple silicon, x86-64 Linux, Windows via WSL2)
+- **SDKs:** CLI, Docker-compatible API, MCP server
+- **Pricing:** 14-day free trial, plans from $29/month
+
+---
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the entry template and source policy.
