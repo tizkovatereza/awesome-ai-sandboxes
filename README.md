@@ -556,6 +556,25 @@ Linux sandboxes for AI agents, each a Firecracker microVM with its own kernel, c
 
 ---
 
+### [Sandbox0](https://sandbox0.ai)
+[Website](https://sandbox0.ai) | [Docs](https://sandbox0.ai/docs/sandbox) | [Pricing](https://sandbox0.ai/pricing)
+
+Managed cloud computers for AI agents that preserve the writable RootFS across successful checkpoints and pause compute between tasks.
+
+- **Isolation:** gVisor
+- **Key features:** persistent writable RootFS, checkpointed pause and resume, on-demand compute, snapshots and forks, offline file operations, API and SDK access, CLI
+- **Cold start:** Not specified
+- **Max session:** Not specified
+- **Snapshots / Forking:** Yes (snapshot + fork)
+- **Stateful:** Yes
+- **GPU:** Not specified
+- **BYOC / Self-host:** No
+- **SDKs:** Go, Python, JavaScript/TypeScript, `s0` CLI
+- **License:** Proprietary runtime; open-source SDKs and CLI
+- **Pricing:** $0.015/GiB-hour compute billed by second; $0.02/GiB-month retained incremental storage; no compute charge while paused
+
+---
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the entry template and source policy.
