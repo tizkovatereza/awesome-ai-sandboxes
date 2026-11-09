@@ -556,6 +556,36 @@ Linux sandboxes for AI agents, each a Firecracker microVM with its own kernel, c
 
 ---
 
+  ### [Buddy Sandboxes](https://buddy.works/sandboxes)
+  [Website](https://buddy.works/sandboxes) |
+  [Docs](https://buddy.works/docs/sandboxes)
+
+  Persistent Linux sandboxes for AI agents and preview environments, with
+  sudo, Docker, public endpoints, snapshots, and a disk that survives
+  restarts.
+
+  - **Isolation:** Isolated Linux system per sandbox (own filesystem,
+  processes, network, systemd as init); Ubuntu 22.04 or 24.04
+  - **Key features:** 50 GB persistent disk, passwordless sudo and Docker
+  inside, public HTTP endpoints with custom domains, automatic wake-up
+  on incoming traffic, SSH and web terminal, Claude Code preinstalled,
+  MCP server for agents, sandbox definition as YAML and pipeline actions
+  - **Cold start:** Not specified (docs state "boots in milliseconds")
+  - **Max session:** Unlimited (no timeout by default; optional
+  inactivity timeout)
+  - **Snapshots / Forking:** Yes (snapshot + fork)
+  - **Stateful:** Yes
+  - **GPU:** Not specified
+  - **BYOC / Self-host:** Not specified
+  - **SDKs:** TypeScript (`@buddy-works/sandbox-sdk`), CLI (`bdy`), REST
+  API
+  - **License:** Proprietary
+  - **Pricing:** Free plan with $1/mo usage credit; Pro $29/mo, Team
+  $299/mo; usage billed at $0.00024 per CPU-minute and per GB-minute of
+  RAM, storage $0.00011 per GB-hour
+
+---
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the entry template and source policy.
