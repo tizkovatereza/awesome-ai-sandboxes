@@ -559,10 +559,10 @@ Linux sandboxes for AI agents, each a Firecracker microVM with its own kernel, c
 ### [Mobilebox](https://mobilebox.dev)
 [Website](https://mobilebox.dev) | [Docs](https://mobilebox.dev/docs) | [GitHub](https://github.com/fifteenA/mobilebox)
 
-Cloud Android phones as computer-use sandboxes for AI agents, controlled through a hosted MCP server or a REST API.
+Cloud Android phones for AI agents, over MCP and REST. $0.01 a minute.
 
 - **Isolation:** Not specified
-- **Key features:** Android 14 arm64 phones, screen as numbered UI elements or screenshot, up to 20 taps/typing/swipes per call, APK and split-bundle install from bytes or a URL, park and resume keeping apps and data, timezone/locale/GPS/proxy per phone, hosted MCP server with 12 tools
+- **Key features:** Android 14 arm64 phones, screen as numbered UI elements or screenshot, up to 20 taps/typing/swipes per call, APK and split-bundle install from bytes or a URL, park and resume keeping apps and data, timezone/locale/GPS/proxy per phone, hosted MCP server with 14 tools
 - **Cold start:** Not specified
 - **Max session:** 15 min by default, up to 3h (`max_duration`)
 - **Snapshots / Forking:** No
