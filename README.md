@@ -217,6 +217,27 @@ Open-source CLI for sandboxed dev environments and AI coding agents. Sessions ru
 - **License:** Apache 2.0
 - **Pricing:** Free and open source (v0.5.4 public beta); "Minimal for Teams" listed as coming soon
 
+---
+
+### [Denegra Shellwarden](https://github.com/denegra-ai/shellwarden-operator) (by Denegra)
+[OperatorHub.io](https://operatorhub.io/operator/shellwarden-operator) | [Docs](https://github.com/denegra-ai/shellwarden-operator/blob/main/docs/DESIGN.md) | [GitHub](https://github.com/denegra-ai/shellwarden-operator)
+
+Community OLM operator that installs NVIDIA OpenShell, a runtime for policy-confined agent sandboxes, on OpenShift and Kubernetes. Not made or endorsed by NVIDIA.
+
+- **Isolation:** NVIDIA OpenShell's kernel-confined sandboxes in Kubernetes pods (Landlock and seccomp)
+- **Key features:** Installs OpenShell from one `OpenShell` resource, listed in OperatorHub.io and the OpenShift community catalog, runs under OpenShift's `restricted-v2` SCC, per-namespace `OpenShellWorkspace`, images pinned by digest, telemetry to NVIDIA off by default, upgrades through OLM
+- **Cold start:** Not specified
+- **Max session:** Not specified
+- **Snapshots / Forking:** Not specified
+- **Stateful:** Yes (with volumes)
+- **GPU:** Not specified
+- **BYOC / Self-host:** Yes
+- **SDKs:** None; the `openshell` CLI and the `OpenShell` and `OpenShellWorkspace` Kubernetes resources
+- **License:** Apache 2.0
+- **Pricing:** Free (open source)
+
+---
+
 ## Closed Source
 
 ### [Baponi](https://baponi.ai)
