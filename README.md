@@ -556,6 +556,25 @@ Linux sandboxes for AI agents, each a Firecracker microVM with its own kernel, c
 
 ---
 
+### [Lizard Sandboxes](https://lizard.build/sandboxes)
+[Website](https://lizard.build/sandboxes) | [Docs](https://lizard.build/docs/sandboxes/) | [GitHub](https://github.com/lizard-build/lizard-sdk)
+
+Managed Linux sandboxes from Lizard (lizard.build) for AI agent tasks, with Firecracker microVMs, snapshots, forks, and TypeScript/Python SDKs.
+
+- **Isolation:** Firecracker microVMs with their own kernels ([runtime docs](https://lizard.build/docs/sandboxes/#runtime-and-templates))
+- **Key features:** Shell execution, file access, stateful Python code interpreter, private preview URLs, pause/resume, desktop computer use, Persistent Volumes
+- **Cold start:** Not specified separately from the documented create-to-first-output benchmark
+- **Max session:** Set per sandbox; SDK and CLI default to five minutes. With no deadline (`timeoutMs: 0`) the VM stops after 596 hours (about 24 days); trial sandboxes run at most 1 hour ([lifetime](https://lizard.build/docs/platform/limits/#sandbox-lifetime), [FAQ](https://lizard.build/#sandbox-faq))
+- **Snapshots / Forking:** Yes (snapshot + fork); fork is unavailable with an attached volume ([fork limits](https://github.com/lizard-build/lizard-sdk/blob/main/docs/sandboxes.md#pause-resume-snapshots-and-fork))
+- **Stateful:** Yes (with volumes)
+- **GPU:** Not specified
+- **BYOC / Self-host:** Not specified
+- **SDKs:** TypeScript/JavaScript (`@lizard-build/sdk`), Python (`lizard-sdk`)
+- **License:** Proprietary service; [Apache-2.0 SDK](https://github.com/lizard-build/lizard-sdk/blob/main/LICENSE)
+- **Pricing:** Pro $19/month includes $19 of usage; Small (2 vCPU, 4 GB RAM, 20 GB disk) costs $0.0162/hour; per-second billing includes idle running time; Persistent Volumes cost extra. Seven-day trial includes $5 of usage and requires a card ([pricing](https://lizard.build/pricing))
+
+---
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the entry template and source policy.
