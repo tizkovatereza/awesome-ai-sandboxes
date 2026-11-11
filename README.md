@@ -571,7 +571,7 @@ Managed Linux sandboxes from Lizard (lizard.build) for AI agent tasks, with Fire
 - **BYOC / Self-host:** Not specified
 - **SDKs:** TypeScript/JavaScript (`@lizard-build/sdk`), Python (`lizard-sdk`)
 - **License:** Proprietary service; [Apache-2.0 SDK](https://github.com/lizard-build/lizard-sdk/blob/main/LICENSE)
-- **Pricing:** Pro $19/month includes $19 of usage; Small (2 vCPU, 4 GB RAM, 5 GB disk) costs $0.0162/hour; per-second billing includes idle running time; Persistent Volumes cost extra. Seven-day trial includes $5 of usage and requires a card ([pricing](https://lizard.build/pricing))
+- **Pricing:** Pro $19/month includes $19 of usage; Small (2 vCPU, 4 GB RAM, 20 GB disk) costs $0.0162/hour; per-second billing includes idle running time; Persistent Volumes cost extra. Seven-day trial includes $5 of usage and requires a card ([pricing](https://lizard.build/pricing))
 
 ---
 
