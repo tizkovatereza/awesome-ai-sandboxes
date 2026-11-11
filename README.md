@@ -564,7 +564,7 @@ Managed Linux sandboxes from Lizard (lizard.build) for AI agent tasks, with Fire
 - **Isolation:** Firecracker microVMs with their own kernels ([runtime docs](https://lizard.build/docs/sandboxes/#runtime-and-templates))
 - **Key features:** Shell execution, file access, stateful Python code interpreter, private preview URLs, pause/resume, desktop computer use, Persistent Volumes
 - **Cold start:** Not specified separately from the documented create-to-first-output benchmark
-- **Max session:** No expiration when created with `timeoutMs: 0`; SDK and CLI default to five minutes ([timeouts](https://lizard.build/docs/sandboxes/#resources-and-timeouts))
+- **Max session:** Set per sandbox; SDK and CLI default to five minutes. With no deadline (`timeoutMs: 0`) the VM stops after 596 hours (about 24 days); trial sandboxes run at most 1 hour ([lifetime](https://lizard.build/docs/platform/limits/#sandbox-lifetime), [FAQ](https://lizard.build/#sandbox-faq))
 - **Snapshots / Forking:** Yes (snapshot + fork); fork is unavailable with an attached volume ([fork limits](https://github.com/lizard-build/lizard-sdk/blob/main/docs/sandboxes.md#pause-resume-snapshots-and-fork))
 - **Stateful:** Yes (with volumes)
 - **GPU:** Not specified
