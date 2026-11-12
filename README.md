@@ -557,18 +557,21 @@ Linux sandboxes for AI agents, each a Firecracker microVM with its own kernel, c
 ---
 
 ### [kosa8](https://kosa8.com)
-[Website](https://kosa8.com) | [Docs](https://kosa8.com/docs/) | [GitHub](https://github.com/kosa8ai/kosa8-claude-plugin)
+[Website](https://kosa8.com) | [Docs](https://docs.kosa8.com) | [GitHub](https://github.com/kosa8ai)
 
-Secure infrastructure for AI agents: each agent gets its own microVM sandbox on the developer's or organisation's own machines.
+Sandboxes for AI agents, each a microVM with its own kernel, on kosa8 Cloud, on your own hosts, or on a Mac, Linux or Windows machine.
 
 - **Isolation:** microVM per sandbox, with its own kernel
-- **Key features:** Checkpoint memory and processes in about 0.7 s, rewind in about 1 s, fork a running sandbox into live copies, allow-listed egress, host-side API key injection, human approvals, hash-chained audit log
-- **Stateful:** Yes, checkpoints and snapshots of the running machine
-- **Long-running:** No time limit (runs on your hardware)
+- **Key features:** Outbound allow-list enforced on the host, API keys injected by a host-side egress broker, human approval gates, tamper-evident hash-chained audit log, Docker-compatible API, MCP server (local, and remote at `api.kosa8.com/mcp`), sleep and wake on Cloud, checkpoint, rewind and fork on local hosts
+- **Cold start:** About 1 s on kosa8 Cloud (sandboxes kept warm)
+- **Max session:** Not specified (idle Cloud sandboxes sleep and wake on the next command)
+- **Snapshots / Forking:** Yes (snapshot + fork) on local hosts; sleep and wake on Cloud
+- **Stateful:** Yes
 - **GPU:** No
-- **BYOC / Self-host:** Yes, local-first (macOS on Apple silicon, x86-64 Linux, Windows via WSL2)
-- **SDKs:** CLI, Docker-compatible API, MCP server
-- **Pricing:** 14-day free trial, plans from $29/month
+- **BYOC / Self-host:** Yes (own hosts managed from the Cloud dashboard, or local install)
+- **SDKs:** Python (`kosa8`), TypeScript (`@kosa8/sdk`), Go (`github.com/kosa8ai/kosa8-go`), Ruby (`kosa8`), Java; CLI and MCP server
+- **License:** Proprietary (the Claude Code plugin is MIT)
+- **Pricing:** Free local tier after email sign-up; Cloud billed per second ($0.048 per vCPU-hour and $0.0154 per GB of RAM per hour in the EU), with $30 credit once a payment method is added; plans from $29/month
 
 ---
 
