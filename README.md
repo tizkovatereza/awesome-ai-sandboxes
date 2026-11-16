@@ -559,17 +559,17 @@ Linux sandboxes for AI agents, each a Firecracker microVM with its own kernel, c
 ### [Panes](https://usepanes.com)
 [Website](https://usepanes.com) | [Docs](https://usepanes.com/docs) | [GitHub (examples)](https://github.com/logancsack/panes-office-workflows)
 
-Cloud Windows computers for AI agents, with desktop Office workflows, API control and persistent state.
+Persistent Windows virtual machines for AI agents running Office, desktop apps, browser tasks and tests through MCP, SDKs or the API.
 
 - **Isolation:** Full Windows virtual machines, each with its own encrypted disk and key ([source](https://usepanes.com/#security))
-- **Key features:** Office-installed template, signed-in desktop PowerShell, screenshots and mouse/keyboard input, file transfer, private browser viewer, stdio MCP server, stop/resume ([docs](https://usepanes.com/docs), [real Excel-to-PowerPoint workflow](https://usepanes.com/examples/excel-to-powerpoint))
+- **Key features:** Windows desktop apps and Edge, Office-ready templates, signed-in desktop PowerShell, screenshots and mouse/keyboard, file transfer, private browser viewer, hosted/stdio MCP, stop/resume ([docs](https://usepanes.com/docs), [real Excel-to-PowerPoint workflow](https://usepanes.com/examples/excel-to-powerpoint))
 - **Cold start:** About one minute to create; about 15 seconds to resume in the provider's tests ([source](https://usepanes.com/docs#quickstart))
 - **Max session:** Not specified; 15-minute idle auto-stop by default, configurable or disabled ([source](https://usepanes.com/docs#auto-stop))
 - **Snapshots / Forking:** Yes (snapshot + fork); protected workstations refuse copies ([source](https://usepanes.com/docs#snapshots))
 - **Stateful:** Yes ([source](https://usepanes.com/#state))
 - **GPU:** Not specified
 - **BYOC / Self-host:** Not specified
-- **SDKs:** Python, TypeScript, REST API; SDK downloads and stdio MCP setup in the [docs](https://usepanes.com/docs#sdks)
+- **SDKs:** Python, TypeScript, REST API; SDK downloads and hosted/stdio MCP setup in the [docs](https://usepanes.com/docs#sdks)
 - **License:** Hosted service license not specified; public [example code is MIT](https://github.com/logancsack/panes-office-workflows/blob/main/LICENSE)
 - **Pricing:** Prepaid usage, billed by the second: $0.33/hour for 2 vCPU / 4 GB, $0.40/hour for 2 vCPU / 8 GB, $0.75/hour for 4 vCPU / 16 GB ([source](https://usepanes.com/#pricing))
 
