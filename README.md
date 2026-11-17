@@ -559,7 +559,7 @@ Linux sandboxes for AI agents, each a Firecracker microVM with its own kernel, c
 ### [ParallelSandbox](https://parallelsandbox.com/en/)
 [Website](https://parallelsandbox.com/en/) | [Docs](https://parallelsandbox.com/en/docs/quickstart/) | [GitHub](https://github.com/parallel-sandbox/parallelsandbox-mcp)
 
-Remote Linux virtual machines for coding agents, driven over MCP, with Docker, a Chromium screen and Android or iPhone simulators.
+A row of your app's test builds; use one, say and circle what's wrong; your AI builds the next. Each runs in its own VM.
 
 - **Isolation:** Virtual machine per box, with its own disk and network
 - **Key features:** Own Docker daemon per box, Chromium on a virtual display, screenshots and recordings, Android emulator and iPhone simulator, hand a running version to a person for review, human takeover of the screen, browser and server logs with source maps
