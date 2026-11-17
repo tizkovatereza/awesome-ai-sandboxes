@@ -556,6 +556,25 @@ Linux sandboxes for AI agents, each a Firecracker microVM with its own kernel, c
 
 ---
 
+### [ParallelSandbox](https://parallelsandbox.com/en/)
+[Website](https://parallelsandbox.com/en/) | [Docs](https://parallelsandbox.com/en/docs/quickstart/) | [GitHub](https://github.com/parallel-sandbox/parallelsandbox-mcp)
+
+Remote Linux virtual machines for coding agents, driven over MCP, with Docker, a Chromium screen and Android or iPhone simulators.
+
+- **Isolation:** Virtual machine per box, with its own disk and network
+- **Key features:** Own Docker daemon per box, Chromium on a virtual display, screenshots and recordings, Android emulator and iPhone simulator, hand a running version to a person for review, human takeover of the screen, browser and server logs with source maps
+- **Cold start:** Not specified
+- **Max session:** Not specified
+- **Snapshots / Forking:** Not specified
+- **Stateful:** Yes (with volumes)
+- **GPU:** Not specified
+- **BYOC / Self-host:** Not specified
+- **SDKs:** MCP (remote streamable HTTP and the stdio adapter `parallelsandbox-mcp`), REST API, browser log SDK `@parallelsandbox/log`
+- **License:** Proprietary (MCP adapter MIT)
+- **Pricing:** Free plan with 1,000 credits; Pro $10.99/month and Max $29.99/month with monthly credits; usage billed by the minute
+
+---
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the entry template and source policy.
