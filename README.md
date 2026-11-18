@@ -217,6 +217,27 @@ Open-source CLI for sandboxed dev environments and AI coding agents. Sessions ru
 - **License:** Apache 2.0
 - **Pricing:** Free and open source (v0.5.4 public beta); "Minimal for Teams" listed as coming soon
 
+---
+
+### [CubePod](https://cubepod.dev)
+[Website](https://cubepod.dev) | [Docs](https://cubepod.dev) | [GitHub](https://github.com/cubeplexai/cubepod)
+
+Open-source MicroVM sandbox platform for AI agents with persistent writable RootFS and workspace block volumes, instant hibernation, and E2B SDK compatibility.
+
+- **Isolation:** Kata Containers microVMs (dedicated guest Linux kernel per sandbox)
+- **Key features:** Dual persistent CSI raw block volumes (`rootfs` + `/workspace`), zero-export suspend and ~1s cross-node resume, zero-trust egress secret vault (`cpodref_` placeholders exchanged over per-pod mTLS), 100% wire-compatible E2B API, independent RootFS reset, signed HTTP/WebSocket/WebRTC desktop & terminal proxy
+- **Cold start:** <50ms (via `PodWarmPool`)
+- **Max session:** Configurable (hibernates to zero CPU/RAM when idle; disk state persists indefinitely)
+- **Snapshots / Forking:** Yes (snapshot + fork)
+- **Stateful:** Yes (with volumes)
+- **GPU:** Not specified
+- **BYOC / Self-host:** Yes (self-host on Kubernetes or Docker Compose)
+- **SDKs:** Python (`cubepod`, `e2b`), TypeScript/JavaScript (`cubepod`, `e2b`), Go (`github.com/cubeplexai/cubepod/pkg/client`), CLI (`cubepod`)
+- **License:** Apache 2.0
+- **Pricing:** Free and open source
+
+---
+
 ## Closed Source
 
 ### [Baponi](https://baponi.ai)
