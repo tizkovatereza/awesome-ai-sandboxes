@@ -556,6 +556,24 @@ Linux sandboxes for AI agents, each a Firecracker microVM with its own kernel, c
 
 ---
 
+### [koigrid](https://koigrid.com/sandboxes)
+[Website](https://koigrid.com/sandboxes) | [Docs](https://koigrid.com/docs)
+
+Persistent Linux microVMs and one-shot sandboxes for AI agents to run code, driven by REST API, CLI or remote MCP.
+
+- **Isolation:** Firecracker microVMs on a dedicated VM fleet
+- **Key features:** Pause and resume with memory, fork a running VM, auto-pause after idle minutes, named snapshots, root and SSH access, file API with large uploads by signed URL, one-shot command sandboxes, remote MCP server with OAuth
+- **Cold start:** Not specified
+- **Max session:** Not specified
+- **Snapshots / Forking:** Yes (snapshot + fork)
+- **Stateful:** Yes
+- **GPU:** No
+- **BYOC / Self-host:** No
+- **SDKs:** REST API, CLI (`koigrid` on npm), MCP
+- **Pricing:** Billed per second while running; from $0.01/h (2 vCPU / 4 GB) to $0.08/h (16 vCPU / 32 GB), 50–250 GB disk included
+
+---
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the entry template and source policy.
