@@ -217,6 +217,27 @@ Open-source CLI for sandboxed dev environments and AI coding agents. Sessions ru
 - **License:** Apache 2.0
 - **Pricing:** Free and open source (v0.5.4 public beta); "Minimal for Teams" listed as coming soon
 
+---
+
+### [virtx](https://virtx.sh) (by Brekkylab)
+[Website](https://virtx.sh) | [Docs](https://virtx.sh/docs) | [GitHub](https://github.com/brekkylab/virtx)
+
+Disposable Linux microVM sandboxes run from your own code, for heavy-dependency jobs and the commands an AI agent decides to run.
+
+- **Isolation:** libkrun microVMs, each with its own Linux kernel (KVM on Linux, Hypervisor.framework on macOS Apple silicon, Windows Hypervisor Platform on Windows 11)
+- **Key features:** One client API for local (stdio), remote (TCP) and cloud servers, no Docker or daemon to install, OCI images from Docker Hub or any registry plus recipe and Dockerfile builds, read and write sandbox files from code without a shell, reach web servers, SSH, VNC or databases inside the sandbox, sandboxes with network cut off entirely, agent skill for Claude Code and Codex
+- **Cold start:** Not specified
+- **Max session:** Not specified
+- **Snapshots / Forking:** Not specified
+- **Stateful:** Yes (with volumes)
+- **GPU:** Yes (host GPU through Vulkan)
+- **BYOC / Self-host:** Yes
+- **SDKs:** Python (`virtx`), Node.js (`@brekkylab/virtx`), Rust (`virtx`)
+- **License:** Apache 2.0
+- **Pricing:** Open source for local and self-hosted servers; virtx cloud is pay as you go ($0.0504 per vCPU-hour, $0.0162 per GiB-hour of memory) with $5 starting credit
+
+---
+
 ## Closed Source
 
 ### [Baponi](https://baponi.ai)
