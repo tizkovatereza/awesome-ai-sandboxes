@@ -564,7 +564,7 @@ A full Linux VM per project or task for AI coding agents, with Claude Code and C
 - **Isolation:** Virtual machine with its own kernel, disk and network address
 - **Key features:** Claude Code, Codex, OpenCode, pi, Kimi and Grok installed and signed in, preview URL for every port, sleep when idle and wake with files, terminals and processes intact, browser terminal, SSH, VS Code and Cursor access, remote MCP server, sizes from 0.5 vCPU / 1 GB to 16 vCPU / 32 GB
 - **Cold start:** Not specified
-- **Max session:** Unlimited (VMs sleep when idle; sleep timeout up to 8 hours or never on Pro)
+- **Max session:** No fixed cap specified; idle sleep timeout from 10 minutes to 8 hours, or never on Pro
 - **Snapshots / Forking:** Not specified
 - **Stateful:** Yes
 - **GPU:** No
