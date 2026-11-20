@@ -556,6 +556,25 @@ Linux sandboxes for AI agents, each a Firecracker microVM with its own kernel, c
 
 ---
 
+### [Homemade](https://www.homemade.dev)
+[Website](https://www.homemade.dev) | [Docs](https://docs.homemade.dev) | [GitHub](https://github.com/usehomemade/homemade)
+
+A full Linux VM per project or task for AI coding agents, with Claude Code and Codex signed in, a preview URL for every port, and a CLI, MCP server and HTTP API.
+
+- **Isolation:** Virtual machine with its own kernel, disk and network address
+- **Key features:** Claude Code, Codex, OpenCode, pi, Kimi and Grok installed and signed in, preview URL for every port, sleep when idle and wake with files, terminals and processes intact, browser terminal, SSH, VS Code and Cursor access, remote MCP server, sizes from 0.5 vCPU / 1 GB to 16 vCPU / 32 GB
+- **Cold start:** Not specified
+- **Max session:** No fixed cap specified; idle sleep timeout from 10 minutes to 8 hours, or never on Pro
+- **Snapshots / Forking:** Not specified
+- **Stateful:** Yes
+- **GPU:** No
+- **BYOC / Self-host:** No (dedicated hosts on Enterprise)
+- **SDKs:** CLI (`homemade`), MCP server, HTTP API (OpenAPI 3.1)
+- **License:** Proprietary
+- **Pricing:** Hobby is free with 25 VM-hours a month; Pro is $20/mo with $20 of usage included, then from $0.012 to $0.18 an hour by size; sleeping VMs are free; Enterprise is custom-priced
+
+---
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the entry template and source policy.
