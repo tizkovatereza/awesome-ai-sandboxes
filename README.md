@@ -556,6 +556,24 @@ Linux sandboxes for AI agents, each a Firecracker microVM with its own kernel, c
 
 ---
 
+### [Quivvo](https://tryquivvo.com)
+[Website](https://tryquivvo.com) | [Docs](https://tryquivvo.com/docs) | [Pricing](https://tryquivvo.com/pricing)
+
+Persistent Linux machines for AI agent harnesses like Claude Code and Codex. Each is a Firecracker microVM with root and a persistent disk.
+
+- **Isolation:** Firecracker microVMs
+- **Key features:** Root access, persistent `/data` disk, auto-suspend that keeps memory when it can, snapshots and forks, Claude Code, Codex, Gemini CLI, OpenCode, Cursor CLI and Copilot CLI preinstalled, hosted MCP server, public HTTPS URL per machine, regions in Amsterdam and Ashburn
+- **Cold start:** Not specified
+- **Max session:** Unlimited (auto-suspends after 30 idle minutes by default; paid plans can turn it off)
+- **Snapshots / Forking:** Yes (snapshot + fork)
+- **Stateful:** Yes
+- **GPU:** No
+- **BYOC / Self-host:** No
+- **SDKs:** TypeScript (`quivvo-sdk`), Python (`quivvo`), CLI (`quivvo`)
+- **Pricing:** $5 of credit once, no card; pay-as-you-go at $0.005 per vCPU-hour, $0.011 per GiB-hour of memory and $0.20 per GiB-month of disk; Pro is $20 a month
+
+---
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the entry template and source policy.
