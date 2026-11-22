@@ -563,7 +563,7 @@ Mobile sandboxes for AI agents: cloud Android 14 phones, iOS simulators (iPhone 
 
 - **Isolation:** Not specified
 - **Key features:** Android 14 arm64 phones, iOS simulators and real Android devices on the same API, screen as numbered UI elements or screenshot, up to 20 taps/typing/swipes per call, APK and split-bundle install from bytes or a URL, park and resume keeping apps and data, timezone/locale/GPS/proxy per phone, app logs, file push/pull, screen recording, hosted MCP server with 19 tools
-- **Cold start:** 19.4 s to first screenshot for a cloud Android phone (median of 10, [November 2026 benchmark](https://mobilebox.dev/benchmarks), boot time not billed)
+- **Cold start:** 1.35 s to first screenshot for a cloud Android phone, handed over pre-booted (median of 10, [22 November 2026 benchmark](https://mobilebox.dev/benchmarks), boot time not billed)
 - **Max session:** 15 min by default, up to 3h (`max_duration`)
 - **Snapshots / Forking:** No
 - **Stateful:** Yes
