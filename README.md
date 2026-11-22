@@ -556,6 +556,25 @@ Linux sandboxes for AI agents, each a Firecracker microVM with its own kernel, c
 
 ---
 
+### [LumiCloud](https://lumicloud.ai)
+[Website](https://lumicloud.ai) | [Docs](https://lumicloud.ai/docs) | [GitHub](https://github.com/LumiCloudOrg/lumibox-examples)
+
+Sandboxes for AI agents in Singapore, each a Firecracker microVM, serving the E2B API so E2B's SDKs work by setting E2B_DOMAIN.
+
+- **Isolation:** Firecracker microVM with its own kernel
+- **Key features:** E2B SDK compatibility (`E2B_DOMAIN=lumicloud.dev`), pause and resume keeping memory and processes, snapshots, webhooks with E2B's event payloads, egress rules, headless Chromium with CDP on port 9222, desktop template for E2B's desktop SDK, remote MCP server
+- **Cold start:** 0.18 s median create, measured from a client in Singapore
+- **Max session:** 1h (Base), 24h (Pro)
+- **Snapshots / Forking:** Yes (snapshot only)
+- **Stateful:** Yes
+- **GPU:** No
+- **BYOC / Self-host:** No
+- **SDKs:** E2B's SDKs: Python (`e2b`, `e2b-code-interpreter`, `e2b-desktop`), JavaScript (`e2b`, `@e2b/code-interpreter`, `@e2b/desktop`)
+- **License:** Proprietary
+- **Pricing:** Per second: S$0.045 per vCPU-hour, S$0.015 per GiB-hour; Base has no monthly fee; Pro is S$39/month including S$39 of usage
+
+---
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the entry template and source policy.
