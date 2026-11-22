@@ -557,13 +557,13 @@ Linux sandboxes for AI agents, each a Firecracker microVM with its own kernel, c
 ---
 
 ### [Mobilebox](https://mobilebox.dev)
-[Website](https://mobilebox.dev) | [Docs](https://mobilebox.dev/docs) | [GitHub](https://github.com/fifteenA/mobilebox)
+[Website](https://mobilebox.dev) | [Docs](https://mobilebox.dev/docs) | [GitHub](https://github.com/mobilebox-dev/mobilebox)
 
-Cloud Android phones for AI agents, over MCP and REST. $0.01 a minute.
+Mobile sandboxes for AI agents: cloud Android 14 phones, iOS simulators (iPhone and iPad) and real Android devices, over MCP and REST. From $0.01 a minute.
 
 - **Isolation:** Not specified
-- **Key features:** Android 14 arm64 phones, screen as numbered UI elements or screenshot, up to 20 taps/typing/swipes per call, APK and split-bundle install from bytes or a URL, park and resume keeping apps and data, timezone/locale/GPS/proxy per phone, hosted MCP server with 14 tools
-- **Cold start:** Not specified
+- **Key features:** Android 14 arm64 phones, iOS simulators and real Android devices on the same API, screen as numbered UI elements or screenshot, up to 20 taps/typing/swipes per call, APK and split-bundle install from bytes or a URL, park and resume keeping apps and data, timezone/locale/GPS/proxy per phone, app logs, file push/pull, screen recording, hosted MCP server with 19 tools
+- **Cold start:** 19.4 s to first screenshot for a cloud Android phone (median of 10, [November 2026 benchmark](https://mobilebox.dev/benchmarks), boot time not billed)
 - **Max session:** 15 min by default, up to 3h (`max_duration`)
 - **Snapshots / Forking:** No
 - **Stateful:** Yes
@@ -571,7 +571,7 @@ Cloud Android phones for AI agents, over MCP and REST. $0.01 a minute.
 - **BYOC / Self-host:** No
 - **SDKs:** REST API (OpenAPI at `https://mobilebox.dev/openapi.json`), MCP server (hosted at `https://mobilebox.dev/mcp`), examples in Python, TypeScript and curl
 - **License:** Proprietary (examples MIT)
-- **Pricing:** $2 starter credit; $0.01 per ready phone-minute, billed per second, one-minute minimum; parked phones free
+- **Pricing:** free credit for new workspaces; per ready phone-minute, billed per second, one-minute minimum: cloud Android $0.01 (large $0.02), real Android $0.01, iPhone and iPad $0.03; parked phones free
 
 ---
 
