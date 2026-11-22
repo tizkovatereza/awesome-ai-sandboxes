@@ -556,6 +556,25 @@ Linux sandboxes for AI agents, each a Firecracker microVM with its own kernel, c
 
 ---
 
+### [Sandscale](https://sandscale.dev)
+[Website](https://sandscale.dev) | [Docs](https://sandscale.dev/docs) | [GitHub](https://github.com/sandscale/agent-quickstart)
+
+Firecracker microVM sandboxes for AI coding agents, one per run, with the network off until an allowlist opens it.
+
+- **Isolation:** Firecracker microVM with its own kernel per run
+- **Key features:** Network off until allowlisted, Vault secrets injected in memory, DLP on prompts and MCP calls, human approvals, hash-chained audit log, pause/resume, warm pools, MCP access
+- **Cold start:** Not specified
+- **Max session:** 4h (Free), 24h (Pro, Team)
+- **Snapshots / Forking:** Not specified
+- **Stateful:** Yes
+- **GPU:** Not specified
+- **BYOC / Self-host:** Yes (Enterprise)
+- **SDKs:** TypeScript (`@sandscale/sdk`)
+- **License:** Proprietary
+- **Pricing:** Free tier with 100 awake vCPU-hours/month; Pro $25/month; Team $48/member/month
+
+---
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the entry template and source policy.
