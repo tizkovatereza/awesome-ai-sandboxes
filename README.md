@@ -556,6 +556,25 @@ Linux sandboxes for AI agents, each a Firecracker microVM with its own kernel, c
 
 ---
 
+### [Mobilebox](https://mobilebox.dev)
+[Website](https://mobilebox.dev) | [Docs](https://mobilebox.dev/docs) | [GitHub](https://github.com/mobilebox-dev/mobilebox)
+
+Mobile sandboxes for AI agents: cloud Android 14 phones, iOS simulators (iPhone and iPad) and real Android devices, over MCP and REST. From $0.01 a minute.
+
+- **Isolation:** Not specified
+- **Key features:** Android 14 arm64 phones, iOS simulators and real Android devices on the same API, screen as numbered UI elements or screenshot, up to 20 taps/typing/swipes per call, APK and split-bundle install from bytes or a URL, park and resume keeping apps and data, timezone/locale/GPS/proxy per phone, app logs, file push/pull, screen recording, hosted MCP server with 19 tools
+- **Cold start:** 1.35 s to first screenshot for a cloud Android phone, handed over pre-booted (median of 10, [22 November 2026 benchmark](https://mobilebox.dev/benchmarks), boot time not billed)
+- **Max session:** 15 min by default, up to 3h (`max_duration`)
+- **Snapshots / Forking:** No
+- **Stateful:** Yes
+- **GPU:** Not specified
+- **BYOC / Self-host:** No
+- **SDKs:** REST API (OpenAPI at `https://mobilebox.dev/openapi.json`), MCP server (hosted at `https://mobilebox.dev/mcp`), examples in Python, TypeScript and curl
+- **License:** Proprietary (examples MIT)
+- **Pricing:** free credit for new workspaces; per ready phone-minute, billed per second, one-minute minimum: cloud Android $0.01 (large $0.02), real Android $0.01, iPhone and iPad $0.03; parked phones free
+
+---
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the entry template and source policy.
