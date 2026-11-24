@@ -556,6 +556,25 @@ Linux sandboxes for AI agents, each a Firecracker microVM with its own kernel, c
 
 ---
 
+### [Sandfort](https://sandfort.dev)
+[Website](https://sandfort.dev) | [Docs](https://docs.sandfort.dev) | [GitHub](https://github.com/malinele/sandfort)
+
+Self-hosted sandbox server for AI-generated code. REST API, Python and TypeScript SDKs, and CLI over Docker-backed sandboxes.
+
+- **Isolation:** Docker containers (dropped capabilities, seccomp, no-new-privileges), optional gVisor runtime
+- **Key features:** exec, filesystem and git toolbox, interactive PTY, snapshots, volumes, per-org quotas, hash-chained audit log, RBAC and OIDC SSO
+- **Cold start:** Not specified
+- **Max session:** Not specified (auto-stop and auto-delete timers are configurable)
+- **Snapshots / Forking:** Yes (snapshot only)
+- **Stateful:** Yes (with volumes)
+- **GPU:** Not specified
+- **BYOC / Self-host:** Yes (self-hosted by design)
+- **SDKs:** Python (`sandfort-sdk`), TypeScript (`@sandfort/sdk`, a subset of the Python SDK)
+- **License:** FSL-1.1-Apache-2.0 (source-available, converts to Apache 2.0 after 2 years)
+- **Pricing:** Not specified
+
+---
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the entry template and source policy.
