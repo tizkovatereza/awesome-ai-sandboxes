@@ -556,6 +556,24 @@ Linux sandboxes for AI agents, each a Firecracker microVM with its own kernel, c
 
 ---
 
+### [Platinum](https://www.platinum.dev)
+[Website](https://www.platinum.dev) | [Docs](https://www.platinum.dev/docs)
+
+Sandbox API for AI agents. Each sandbox is a Cloud Hypervisor microVM with its own kernel, disk and network.
+
+- **Isolation:** Cloud Hypervisor microVM on KVM
+- **Key features:** Stop and resume that keep memory and running processes where they can, managed processes with streamed output, filesystem API, egress proxy that writes org secrets into request headers for allowed hosts, preview URLs for ports, volumes, templates built from container images, OpenAI Agents SDK, Deep Agents, Pydantic AI, Google ADK and Mastra integrations
+- **Cold start:** 0.6 s p50, create call to running code
+- **Max session:** Unlimited (no lifetime deadline)
+- **Snapshots / Forking:** Yes (snapshot + fork)
+- **Stateful:** Yes (with volumes)
+- **GPU:** No
+- **BYOC / Self-host:** Yes (Enterprise)
+- **SDKs:** Python (`platinum-sdk`), TypeScript (`@platinum-dev/sdk`), CLI (`@platinum-dev/cli`)
+- **Pricing:** Prepaid credits, no subscription; billed per second at $0.0324 per vCPU-hour and $0.0108 per GiB-hour of RAM
+
+---
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the entry template and source policy.
