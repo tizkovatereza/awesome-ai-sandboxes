@@ -556,6 +556,25 @@ Linux sandboxes for AI agents, each a Firecracker microVM with its own kernel, c
 
 ---
 
+### [getrollouts.dev](https://getrollouts.dev)
+[Website](https://getrollouts.dev) | [Docs](https://getrollouts.dev/docs)
+
+Hosted E2B-compatible sandboxes: Firecracker microVMs operated in Switzerland, used with the official E2B SDKs by setting E2B_DOMAIN.
+
+- **Isolation:** Firecracker microVM
+- **Key features:** E2B SDK and API compatibility via `E2B_DOMAIN`, pause and resume keeping memory and disk, public HTTPS URL per port, custom templates up to 8 vCPU / 16 GiB, outbound SMTP blocked, per-second prepaid billing, servers in Switzerland
+- **Cold start:** ~0.5 s
+- **Max session:** 24h
+- **Snapshots / Forking:** Yes (snapshot only)
+- **Stateful:** Yes
+- **GPU:** No
+- **BYOC / Self-host:** No
+- **SDKs:** Python (`e2b`, `e2b-code-interpreter`), JavaScript/TypeScript (`e2b`, `@e2b/code-interpreter`)
+- **License:** Proprietary
+- **Pricing:** $2 free trial credit without card; $0.040 per vCPU-hour plus $0.013 per GiB-hour, billed per second, prepaid, no monthly fee
+
+---
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the entry template and source policy.
